@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="420.0" spacing="20.0" styleClass="background" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.mapidev.javafx.backup.controller.MainController">
+   <children>
+      <Label fx:id="labHeader" alignment="TOP_LEFT" styleClass="label-header" text="Simple Backup Tool v1.0" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></Label>
+      <Button fx:id="btnSource" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSource" text="Source" />
+      <TextField fx:id="txtSource" editable="false" />
+      <Button fx:id="btnDest" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDest" text="Destination" />
+      <TextField fx:id="txtDest" editable="false">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></TextField>
+      <HBox alignment="TOP_CENTER" fillHeight="false" prefHeight="91.0" prefWidth="380.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btnStart" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStart" styleClass="btn-main" text="Start" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnStop" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStop" styleClass="btn-main" text="Stop" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

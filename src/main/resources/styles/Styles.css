@@ -1,0 +1,52 @@
+.label-header {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+}
+
+.background {
+    -fx-background-color: #3498DB;
+}
+
+.separator *.line { 
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #ffffff;
+}
+
+.text-field {
+    -fx-border-color: #3498DB, #3498DB;
+    -fx-border-width: 1, 1;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: #3498DB;
+}
+
+.btn-main.button {
+    -fx-font-size: 16pt;
+    -fx-padding: 20 40 20 40;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-background-color: #3498DB;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #ffffff;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #3498DB;
+
+}
+
+.button:default, .button:pressed, .button:focused, .button:default:focused {
+    -fx-border-width: 1;
+}
